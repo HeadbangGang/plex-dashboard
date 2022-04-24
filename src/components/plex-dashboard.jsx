@@ -25,8 +25,8 @@ const PlexDashboard = () => {
 
   const { isSmallView } = useContext(UIContext)
 
-  useEffect(async () => {
-    await fetchStatuses()
+  useEffect(() => {
+    fetchStatuses()
   }, [])
 
   const fetchStatuses = async () => {
